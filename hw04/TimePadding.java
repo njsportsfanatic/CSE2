@@ -27,7 +27,7 @@ public class TimePadding{
         int nHours = nSeconds / 3600;
         nSeconds = nSeconds % 3600;
         int nMinutes = nSeconds / 60;
-        int nSeconds1 = nSeconds % 60;
+        int nSeconds1 = nSeconds % 60; //only seconds
         
         //print time in conventional form
         System.out.println(d.format(nHours) + ":" + d.format(nMinutes) + ":" + d.format(nSeconds1));
