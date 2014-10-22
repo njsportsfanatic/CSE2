@@ -8,38 +8,46 @@
 import java.util.Scanner; 
 
 // define a class 
-public class BigMacAgain{
+public class BigMacTimeAgain{
 
 // add main method
     public static void main(String[] args) {
 
-        Scanner myScanner;
-        myScanner = new Scanner(System.in);
+        Scanner myScanner = new Scanner(System.in);
         //creates variables for what user puts in scanner
+        
         System.out.print("Enter the number of Big Macs: ");
-        if(myScanner.hasNextInt())
-                int nBigMacs = myScanner.nextInt();
-        else{ System.out.println("You did not enter an int");
+        int nBigMacs = myScanner.nextInt();
+        if(nBigMacs>0){
+                System.out.println("You ordered " + nBigMacs + " Big Macs for a cost of " + nBigMacs + "x2.22 = $" + nBigMacs*2.2);
+        }
+        else if (nBigMacs<=0){
+                System.out.println("You did not enter an int > 0");
+                return;
+        }
+        else{ 
+                System.out.println("You did not enter an int");
                 return; //leaves the program, i.e. the program terminates
              }
-        if(myScanner.hasNextInt>0())
-                int nBigMacs = myScanner.nextInt();
-        else{ System.out.println("You did not enter an int > 0");
-                return;
-             }
-        int nBigMacs = myScanner.nextInt();
+        
+        
         System.out.print("Do you want an order of fries (Y/y/N/n)?: ");
-
-        int fries;
-        String answer=myScanner.next();
-        if(answer.equals("Y"), answer.equals("y"), answer.equals("N"), answer.equals("n"))
+        String fries = myScanner.next();
         
-        else { System.out.println("You did not enter one of 'y', 'Y', 'N', 'n'");
-                return;
-             }
+        if(fries == "Y" || fries == "y"){
+                System.out.println("You ordered fries at a cost of $2.15");
+                System.out.println("The total cost of the meal is" + (nBigMacs*2.22 + 2.15));
+                
+        }
+        else if (fries == "N" || fries == "n"){
+                System.out.println("The total cost of the meal is" + (nBigMacs*2.22));
+        }
         
-        if(answer.equals("Y"), answer.equals("y"))
-                int fries = myScanner.nextInt();
-                System.out.println("You ordered fries at a cost of $2.15);
+        else{
+                System.out.println("You did not enter one of 'y', 'Y', 'N', 'n'");
+        }
+    }
+    
+}
                 
                 
