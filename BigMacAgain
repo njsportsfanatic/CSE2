@@ -7,32 +7,10 @@
 
 import java.util.Scanner; 
 
-// define a class 
+define a class 
 public class BigMacAgain{
     
-// add main method
-    public static void main(String[] args) {
+add main method
+   public static void main(String[] args) {
         
-        Scanner myScanner;
-        myScanner = new Scanner(System.in);
-	//creates variables for what user puts in scanner
-        System.out.print("Enter the number of Big Macs: ");
-	if(myScanner.hasNextInt())
-		int nBigMacs = myScanner.nextInt();
-	else{ System.out.println("You did not enter an int");
-		return; //leaves the program, i.e. the program terminates
-	     }
-	if(myScanner.hasNextInt>0())
-		int nBigMacs = myScanner.nextInt();
-	else{ System.out.println("You did not enter an int > 0");
-		return;
-	     }
-        int nBigMacs = myScanner.nextInt();
-	System.out.print("Do you want an order of fries (Y/y/N/n): ");
-
-	String answer=myScanner.next();
-	if(answer.equals("Y"), answer.equals("y"), answer.equals("N"), answer.equals("n"));
-		int nBigMacs = myScanner.nextInt();
-	else else{ System.out.println("You did not enter an int > 0");
-                return;
-             }
+      
