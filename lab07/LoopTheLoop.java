@@ -13,11 +13,25 @@ public class LoopTheLoop{
 // add main method
     public static void main(String[] args) {
         
-        Scanner myScanner;
-        myScanner = new Scanner(System.in);
+        Scanner myScanner = new Scanner(System.in);
         
-        int nStars = 10;
-        int counter = 0;
+        
+        
+        int nStars = -1;
+        int counter = 0;/*
+        while(nStars>=1 && nStars<=15){
+            System.out.print("Enter an int between 1 and 15- ");
+            while(myScanner.!hasNextInt()){
+                System.out.print("Enter an int between 1 and 15- ");
+                Scanner myScanner = new Scanner(System.in);
+                if(myScanner.hasNextInt()){
+                    break;
+                }
+            }
+        }
+        */
+        nStars = 10;
+        counter = 0;
         
         while(nStars > counter){
             System.out.print("*");
@@ -37,8 +51,9 @@ public class LoopTheLoop{
             System.out.println();
         }
         
-        System.out.print("Enter an int between 1 and 15- ");
-        nStars = myScanner.nextInt();
+        
+        
+        
         
         
     }
