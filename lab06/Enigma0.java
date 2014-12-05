@@ -33,7 +33,7 @@ public class Enigma0{
 /* Error report:
         n was not initialized for the default case, it had no value
         to fix this, I initialized n above the if/else statement
-        then, I changed the int n =... within the if/else to n=...
+        then, I changed the (int n =...) within the if/else to (n=...)
         lastly, I removed n from the list of initalized variable because I initialized it above
  */
 

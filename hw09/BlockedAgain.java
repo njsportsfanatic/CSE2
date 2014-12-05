@@ -22,7 +22,7 @@ public class BlockedAgain{
     
     public static int checkInt(Scanner userInput){
         int nStacks;
-        System.out.print("Enter an in int between 1 and 9, inclusive: ");
+        System.out.print("Enter an int between 1 and 9, inclusive: ");
         while(true){
             if (userInput.hasNextInt()){ 
                 nStacks = userInput.nextInt(); //sets nStacks to be an int
